@@ -36,6 +36,5 @@ namespace minileveldb.test
             mockSkipList.Setup(s => s.Get("key1")).Returns("value1");
             Assert.AreEqual("value1", memtable.Get("key1"));
         }
-
     }
 }

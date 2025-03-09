@@ -10,6 +10,20 @@ namespace minileveldb.interfaces
     {
         void Put(string key, string value);
 
-        string Get(string key);
+        string? Get(string key);
+
+        void Delete(string key);
+
+        bool ContainKey(string key);
+
+        void Clear();
+
+        int Size();
+
+        int GetLevelCount();
+
+        int GetCurrentMaxLevel();
+
+        IEnumerable<int> GetElementCountForEachLevel();
     }
 }
